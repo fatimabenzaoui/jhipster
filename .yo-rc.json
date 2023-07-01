@@ -3,7 +3,12 @@
     "applicationType": "monolith",
     "authenticationType": "jwt",
     "baseName": "jhipsterapp",
-    "blueprints": [],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-entity-audit",
+        "version": "4.0.0"
+      }
+    ],
     "buildTool": "maven",
     "cacheProvider": "ehcache",
     "clientFramework": "angularX",
@@ -19,16 +24,24 @@
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
+    "entities": ["Category", "Product"],
     "entitySuffix": "",
+    "incrementalChangelog": true,
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.9.3",
     "jwtSecretKey": "NWVmNmE4NTg3ZDU4NzNjYzgxYmUzYWQxODk3NmQ3MDFmYzgzM2NjYjJjMThlZWViMjU1MGVjMzQzNzM5Yzc3ZjRjMzgyZjc1YWQ5MTQ1ZGVmNGVmMTllYjc3ZjY5OGU2YTA3M2Q2YTczYTM0MGIxOTcyNTJmNzU0Yjk1ZDg3NzQ=",
     "languages": ["en"],
+    "lastLiquibaseTimestamp": 1686400284000,
     "messageBroker": false,
     "microfrontend": false,
     "microfrontends": [],
     "nativeLanguage": "en",
-    "otherModules": [],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-entity-audit",
+        "version": "4.0.0"
+      }
+    ],
     "packageName": "com.jhipster.app",
     "pages": [],
     "prodDatabaseType": "mysql",
@@ -44,5 +57,10 @@
     "testFrameworks": [],
     "websocket": false,
     "withAdminUi": true
+  },
+  "generator-jhipster-entity-audit": {
+    "auditFramework": "custom",
+    "auditPage": true,
+    "entityAuditEventChangelogDate": "20230610123124"
   }
 }

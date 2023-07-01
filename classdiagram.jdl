@@ -1,0 +1,17 @@
+entity Category {
+    categoryName String maxlength(25) required
+}
+
+entity Product {
+    productName String required
+    productDescription String
+}
+
+relationship OneToMany {
+    Category to Product{category(categoryName)}
+}
+
+filter Category, Product
+paginate * with infinite-scroll
+dto * with mapstruct
+service all with serviceImpl
